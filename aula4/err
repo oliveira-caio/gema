@@ -1,0 +1,141 @@
+voto.cpp: In function ‘int main()’:
+voto.cpp:11:38: error: use of deleted function ‘std::unordered_set<_Value, _Hash, _Pred, _Alloc>::unordered_set() [with _Value = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Hash = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _Pred = std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _Alloc = std::allocator<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]’
+   11 |  unordered_set<pair<string, string>> myset;
+      |                                      ^~~~~
+In file included from /usr/include/c++/10.2.0/unordered_set:47,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:118,
+                 from voto.cpp:1:
+/usr/include/c++/10.2.0/bits/unordered_set.h:135:7: note: ‘std::unordered_set<_Value, _Hash, _Pred, _Alloc>::unordered_set() [with _Value = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Hash = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _Pred = std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _Alloc = std::allocator<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]’ is implicitly deleted because the default definition would be ill-formed:
+  135 |       unordered_set() = default;
+      |       ^~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/unordered_set.h:135:7: error: use of deleted function ‘std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>::_Hashtable() [with _Key = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Value = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _ExtractKey = std::__detail::_Identity; _Equal = std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H1 = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H2 = std::__detail::_Mod_range_hashing; _Hash = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<true, true, true>]’
+In file included from /usr/include/c++/10.2.0/unordered_map:46,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:117,
+                 from voto.cpp:1:
+/usr/include/c++/10.2.0/bits/hashtable.h:451:7: note: ‘std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>::_Hashtable() [with _Key = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Value = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _ExtractKey = std::__detail::_Identity; _Equal = std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H1 = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H2 = std::__detail::_Mod_range_hashing; _Hash = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<true, true, true>]’ is implicitly deleted because the default definition would be ill-formed:
+  451 |       _Hashtable() = default;
+      |       ^~~~~~~~~~
+/usr/include/c++/10.2.0/bits/hashtable.h:451:7: error: use of deleted function ‘std::__detail::_Hashtable_base<_Key, _Value, _ExtractKey, _Equal, _H1, _H2, _Hash, _Traits>::_Hashtable_base() [with _Key = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Value = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _ExtractKey = std::__detail::_Identity; _Equal = std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H1 = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H2 = std::__detail::_Mod_range_hashing; _Hash = std::__detail::_Default_ranged_hash; _Traits = std::__detail::_Hashtable_traits<true, true, true>]’
+In file included from /usr/include/c++/10.2.0/bits/hashtable.h:35,
+                 from /usr/include/c++/10.2.0/unordered_map:46,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:117,
+                 from voto.cpp:1:
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1791:5: note: ‘std::__detail::_Hashtable_base<_Key, _Value, _ExtractKey, _Equal, _H1, _H2, _Hash, _Traits>::_Hashtable_base() [with _Key = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Value = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _ExtractKey = std::__detail::_Identity; _Equal = std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H1 = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H2 = std::__detail::_Mod_range_hashing; _Hash = std::__detail::_Default_ranged_hash; _Traits = std::__detail::_Hashtable_traits<true, true, true>]’ is implicitly deleted because the default definition would be ill-formed:
+ 1791 |     _Hashtable_base() = default;
+      |     ^~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1791:5: error: use of deleted function ‘std::__detail::_Hash_code_base<_Key, _Value, _ExtractKey, _H1, _H2, std::__detail::_Default_ranged_hash, true>::_Hash_code_base() [with _Key = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Value = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _ExtractKey = std::__detail::_Identity; _H1 = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H2 = std::__detail::_Mod_range_hashing]’
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1368:7: note: ‘std::__detail::_Hash_code_base<_Key, _Value, _ExtractKey, _H1, _H2, std::__detail::_Default_ranged_hash, true>::_Hash_code_base() [with _Key = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Value = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _ExtractKey = std::__detail::_Identity; _H1 = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H2 = std::__detail::_Mod_range_hashing]’ is implicitly deleted because the default definition would be ill-formed:
+ 1368 |       _Hash_code_base() = default;
+      |       ^~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1368:7: error: use of deleted function ‘std::__detail::_Hashtable_ebo_helper<_Nm, _Tp, true>::_Hashtable_ebo_helper() [with int _Nm = 1; _Tp = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]’
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1112:7: note: ‘std::__detail::_Hashtable_ebo_helper<_Nm, _Tp, true>::_Hashtable_ebo_helper() [with int _Nm = 1; _Tp = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >]’ is implicitly deleted because the default definition would be ill-formed:
+ 1112 |       _Hashtable_ebo_helper() = default;
+      |       ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1112:7: error: use of deleted function ‘std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >::hash()’
+In file included from /usr/include/c++/10.2.0/bits/basic_string.h:6787,
+                 from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from voto.cpp:1:
+/usr/include/c++/10.2.0/bits/functional_hash.h:101:12: note: ‘std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >::hash()’ is implicitly deleted because the default definition would be ill-formed:
+  101 |     struct hash : __hash_enum<_Tp>
+      |            ^~~~
+/usr/include/c++/10.2.0/bits/functional_hash.h:101:12: error: no matching function for call to ‘std::__hash_enum<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, false>::__hash_enum()’
+/usr/include/c++/10.2.0/bits/functional_hash.h:82:7: note: candidate: ‘std::__hash_enum<_Tp, <anonymous> >::__hash_enum(std::__hash_enum<_Tp, <anonymous> >&&) [with _Tp = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; bool <anonymous> = false]’
+   82 |       __hash_enum(__hash_enum&&);
+      |       ^~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/functional_hash.h:82:7: note:   candidate expects 1 argument, 0 provided
+/usr/include/c++/10.2.0/bits/functional_hash.h:101:12: error: ‘std::__hash_enum<_Tp, <anonymous> >::~__hash_enum() [with _Tp = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; bool <anonymous> = false]’ is private within this context
+  101 |     struct hash : __hash_enum<_Tp>
+      |            ^~~~
+/usr/include/c++/10.2.0/bits/functional_hash.h:83:7: note: declared private here
+   83 |       ~__hash_enum();
+      |       ^
+In file included from /usr/include/c++/10.2.0/bits/hashtable.h:35,
+                 from /usr/include/c++/10.2.0/unordered_map:46,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:117,
+                 from voto.cpp:1:
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1112:7: error: use of deleted function ‘std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >::~hash()’
+ 1112 |       _Hashtable_ebo_helper() = default;
+      |       ^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/10.2.0/bits/basic_string.h:6787,
+                 from /usr/include/c++/10.2.0/string:55,
+                 from /usr/include/c++/10.2.0/bits/locale_classes.h:40,
+                 from /usr/include/c++/10.2.0/bits/ios_base.h:41,
+                 from /usr/include/c++/10.2.0/ios:42,
+                 from /usr/include/c++/10.2.0/istream:38,
+                 from /usr/include/c++/10.2.0/sstream:38,
+                 from /usr/include/c++/10.2.0/complex:45,
+                 from /usr/include/c++/10.2.0/ccomplex:39,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:54,
+                 from voto.cpp:1:
+/usr/include/c++/10.2.0/bits/functional_hash.h:101:12: note: ‘std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >::~hash()’ is implicitly deleted because the default definition would be ill-formed:
+  101 |     struct hash : __hash_enum<_Tp>
+      |            ^~~~
+/usr/include/c++/10.2.0/bits/functional_hash.h:101:12: error: ‘std::__hash_enum<_Tp, <anonymous> >::~__hash_enum() [with _Tp = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; bool <anonymous> = false]’ is private within this context
+/usr/include/c++/10.2.0/bits/functional_hash.h:83:7: note: declared private here
+   83 |       ~__hash_enum();
+      |       ^
+In file included from /usr/include/c++/10.2.0/bits/hashtable.h:35,
+                 from /usr/include/c++/10.2.0/unordered_map:46,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:117,
+                 from voto.cpp:1:
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1368:7: error: use of deleted function ‘std::__detail::_Hashtable_ebo_helper<1, std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, true>::~_Hashtable_ebo_helper()’
+ 1368 |       _Hash_code_base() = default;
+      |       ^~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1109:12: note: ‘std::__detail::_Hashtable_ebo_helper<1, std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, true>::~_Hashtable_ebo_helper()’ is implicitly deleted because the default definition would be ill-formed:
+ 1109 |     struct _Hashtable_ebo_helper<_Nm, _Tp, true>
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1109:12: error: use of deleted function ‘std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >::~hash()’
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1791:5: error: use of deleted function ‘std::__detail::_Hash_code_base<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::__detail::_Identity, std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>::~_Hash_code_base()’
+ 1791 |     _Hashtable_base() = default;
+      |     ^~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1341:12: note: ‘std::__detail::_Hash_code_base<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::__detail::_Identity, std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>::~_Hash_code_base()’ is implicitly deleted because the default definition would be ill-formed:
+ 1341 |     struct _Hash_code_base<_Key, _Value, _ExtractKey, _H1, _H2,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1342 |       _Default_ranged_hash, true>
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1341:12: error: use of deleted function ‘std::__detail::_Hashtable_ebo_helper<1, std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, true>::~_Hashtable_ebo_helper()’
+In file included from /usr/include/c++/10.2.0/unordered_map:46,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:117,
+                 from voto.cpp:1:
+/usr/include/c++/10.2.0/bits/hashtable.h:451:7: error: use of deleted function ‘std::__detail::_Hashtable_base<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::__detail::_Identity, std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, true, true> >::~_Hashtable_base()’
+  451 |       _Hashtable() = default;
+      |       ^~~~~~~~~~
+In file included from /usr/include/c++/10.2.0/bits/hashtable.h:35,
+                 from /usr/include/c++/10.2.0/unordered_map:46,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:117,
+                 from voto.cpp:1:
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1725:10: note: ‘std::__detail::_Hashtable_base<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::__detail::_Identity, std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, true, true> >::~_Hashtable_base()’ is implicitly deleted because the default definition would be ill-formed:
+ 1725 |   struct _Hashtable_base
+      |          ^~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1725:10: error: use of deleted function ‘std::__detail::_Hash_code_base<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::__detail::_Identity, std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>::~_Hash_code_base()’
+In file included from /usr/include/c++/10.2.0/unordered_map:46,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:117,
+                 from voto.cpp:1:
+/usr/include/c++/10.2.0/bits/hashtable.h: In instantiation of ‘std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>::~_Hashtable() [with _Key = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Value = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _ExtractKey = std::__detail::_Identity; _Equal = std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H1 = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H2 = std::__detail::_Mod_range_hashing; _Hash = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<true, true, true>]’:
+/usr/include/c++/10.2.0/bits/unordered_set.h:97:11:   required from here
+/usr/include/c++/10.2.0/bits/hashtable.h:1389:5: error: use of deleted function ‘std::__detail::_Hashtable_base<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::__detail::_Identity, std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, true, true> >::~_Hashtable_base()’
+ 1389 |     }
+      |     ^
+In file included from /usr/include/c++/10.2.0/bits/hashtable.h:35,
+                 from /usr/include/c++/10.2.0/unordered_map:46,
+                 from /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/stdc++.h:117,
+                 from voto.cpp:1:
+/usr/include/c++/10.2.0/bits/hashtable_policy.h: In instantiation of ‘std::__detail::_Hash_code_base<_Key, _Value, _ExtractKey, _H1, _H2, std::__detail::_Default_ranged_hash, true>::__hash_code std::__detail::_Hash_code_base<_Key, _Value, _ExtractKey, _H1, _H2, std::__detail::_Default_ranged_hash, true>::_M_hash_code(const _Key&) const [with _Key = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Value = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _ExtractKey = std::__detail::_Identity; _H1 = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H2 = std::__detail::_Mod_range_hashing; std::__detail::_Hash_code_base<_Key, _Value, _ExtractKey, _H1, _H2, std::__detail::_Default_ranged_hash, true>::__hash_code = long unsigned int]’:
+/usr/include/c++/10.2.0/bits/hashtable.h:1807:41:   required from ‘std::pair<typename std::__detail::_Hashtable_base<_Key, _Value, _ExtractKey, _Equal, _H1, _H2, _Hash, _Traits>::iterator, bool> std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>::_M_insert(_Arg&&, const _NodeGenerator&, std::true_type, std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>::size_type) [with _Arg = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _NodeGenerator = std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, true> > >; _Key = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Value = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _ExtractKey = std::__detail::_Identity; _Equal = std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H1 = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H2 = std::__detail::_Mod_range_hashing; _Hash = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<true, true, true>; typename std::__detail::_Hashtable_base<_Key, _Value, _ExtractKey, _Equal, _H1, _H2, _Hash, _Traits>::iterator = std::__detail::_Hashtable_base<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::__detail::_Identity, std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, true, true> >::iterator; std::true_type = std::integral_constant<bool, true>; std::_Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits>::size_type = long unsigned int]’
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:971:22:   required from ‘std::__detail::_Insert<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits, true>::__ireturn_type std::__detail::_Insert<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits, true>::insert(std::__detail::_Insert<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits, true>::value_type&&) [with _Key = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Value = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _ExtractKey = std::__detail::_Identity; _Equal = std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H1 = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _H2 = std::__detail::_Mod_range_hashing; _Hash = std::__detail::_Default_ranged_hash; _RehashPolicy = std::__detail::_Prime_rehash_policy; _Traits = std::__detail::_Hashtable_traits<true, true, true>; std::__detail::_Insert<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits, true>::__ireturn_type = std::__detail::_Insert<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::allocator<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::__detail::_Identity, std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, true, true>, true>::__ireturn_type; std::__detail::_Insert<_Key, _Value, _Alloc, _ExtractKey, _Equal, _H1, _H2, _Hash, _RehashPolicy, _Traits, true>::value_type = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >]’
+/usr/include/c++/10.2.0/bits/unordered_set.h:425:27:   required from ‘std::pair<typename std::_Hashtable<_Value, _Value, _Alloc, std::__detail::_Identity, _Pred, _Hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<std::__not_<std::__and_<std::__is_fast_hash<_Hash>, std::__is_nothrow_invocable<const _Hash&, const _Tp&> > >::value, true, true> >::iterator, bool> std::unordered_set<_Value, _Hash, _Pred, _Alloc>::insert(std::unordered_set<_Value, _Hash, _Pred, _Alloc>::value_type&&) [with _Value = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >; _Hash = std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _Pred = std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; _Alloc = std::allocator<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >; typename std::_Hashtable<_Value, _Value, _Alloc, std::__detail::_Identity, _Pred, _Hash, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<std::__not_<std::__and_<std::__is_fast_hash<_Hash>, std::__is_nothrow_invocable<const _Hash&, const _Tp&> > >::value, true, true> >::iterator = std::__detail::_Hashtable_base<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >, std::__detail::_Identity, std::equal_to<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, true, true> >::iterator; std::unordered_set<_Value, _Hash, _Pred, _Alloc>::value_type = std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >]’
+voto.cpp:16:32:   required from here
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1377:16: error: static assertion failed: hash function must be invocable with an argument of key type
+ 1377 |  static_assert(__is_invocable<const _H1&, const _Key&>{},
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/10.2.0/bits/hashtable_policy.h:1379:16: error: no match for call to ‘(const std::hash<std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> > >) (const std::pair<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char> >&)’
+ 1379 |  return _M_h1()(__k);
+      |         ~~~~~~~^~~~~
